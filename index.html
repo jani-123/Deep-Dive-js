@@ -128,21 +128,31 @@
             </div>
             <!-- Hoja de respuestas -->
             <div class="col-xs-12 col-md-12 Preguntas" id="hojasRespuestas">
-                    <img src="img/camion.jpg">
-                    <div class="cajaRespuestas" id="cajadeRespuestas">
-                        <h3>Here are you answer:</h3>
-                        <div id="botonesRespuestas" class="btnRespuestas">
-                             <p><strong>1: </strong> Which is the oldest airline in the world?</p>
-                             <p><strong>2: </strong> Which is the largest port in the world?</p>
-                             <p><strong>3: </strong> Which is the longest distance cycling backwards?</p>
-                             <p><strong>4: </strong> Which is the highest speed ever reached by a school bus?</p>
-                             <p><strong>4: </strong> Which is the longest car trip on one tank of gas?</p>
-                        </div>
-                        <div class="btnSubmit">
-                           <button class="btn btn-lg">Submit</button>
-                        </div>
+                <img src="img/camion.jpg">
+                <div class="cajaRespuestas" id="cajadeRespuestas">
+                    <h3>Here are you answer:</h3>
+                    <div class="btnRespuestas" id="Respuestas">
+                        <p><strong>1: </strong> Which is the oldest airline in the world?</p>
+                        <p><strong>2: </strong> Which is the largest port in the world?</p>
+                        <p><strong>3: </strong> Which is the longest distance cycling backwards?</p>
+                        <p><strong>4: </strong> Which is the highest speed ever reached by a school bus?</p>
+                        <p><strong>4: </strong> Which is the longest car trip on one tank of gas?</p>
+                    </div>
+                    <div class="btnSubmit">
+                        <button class="btn btn-lg" id="rptaCorrectas">Submit</button>
+                    </div>
+                    <div class="btnRespuestas" id="RespuestasCorrectas" style="display:none;">
+                        <p style="color:green;"><strong>1: </strong> Which is the oldest airline in the world?</p>
+                        <p style="color:red;"><strong>2: </strong> Which is the largest port in the world?</p>
+                        <p style="color:green;"><strong>3: </strong> Which is the longest distance cycling backwards?</p>
+                        <p style="color:red;"><strong>4: </strong> Which is the highest speed ever reached by a school bus?</p>
+                        <p style="color:green;"><strong>4: </strong> Which is the longest car trip on one tank of gas?</p>
+                    </div>
+                    <div class="btnReinicio" style="display:none; margin-left: 43%;" id="reinicio">
+                        <button class="btn btn-lg"><a class="reiniciaJuego" href="javascript:void('reiniciaJuego');">Start Again</a></button>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 

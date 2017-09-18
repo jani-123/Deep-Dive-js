@@ -41,5 +41,33 @@ $(document).ready(function () {
             $("#Cuestionario5").slideUp(0);
             $("#hojasRespuestas").fadeIn(300);//fundir un elemento oculto muestra
         });
+        $(".reiniciaJuego").click(function (e) { // click en registrame
+            $("#Cuestionario2").slideUp(0);// oculta con movimiento deslizante para arriba
+            $("#Cuestionario3").slideUp(0);// oculta con movimiento deslizante para arriba
+            $("#Cuestionario4").slideUp(0);
+            $("#Cuestionario5").slideUp(0);
+            $("#hojasRespuestas").slideUp(0);
+            $("#Cuestionario1").fadeIn(300);//fundir un elemento oculto muestra
+        });
+
+        $("#rptaCorrectas").click(function(){
+            var rptaCorrecto = document.getElementById('RespuestasCorrectas');
+            var respuestas = document.getElementById('Respuestas');
+            var botonRespuesta = document.getElementById('rptaCorrectas');
+            var btnReinicio = document.getElementById('reinicio');
+            if(rptaCorrecto.style.display === "none")
+            {
+                respuestas.style.display = "none";
+                botonRespuesta.style.display = "none";
+                rptaCorrecto.style.display = "block";
+                btnReinicio.style.display = "block";
+            }else 
+            {
+                respuestas.style.display = "block";
+                botonRespuesta.style.display = "block";
+                rptaCorrecto.style.display = "none";
+                btnReinicio.style.display = "none";
+            }
+        })
     });
 });
