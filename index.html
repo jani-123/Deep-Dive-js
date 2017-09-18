@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Deep Dive js</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/css/intlTelInput.css">  -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Primera pregunta-->
+            <div class="col-xs-12 col-md-12 Preguntas" id="Cuestionario1">
+                <img src="img/avion.jpg">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                        <span class="sr-only">25% Complete</span>
+                    </div>
+                </div>
+                <div class="cajaPregunta" id="cajadePreguntas">
+                    <h3>Which is the oldest airline in the world?</h3>
+                    <div id="botonesRespuestas" class="btnRespuestas">
+                        <button class="btn btn-lg"><a class="pregunta2" href="javascript:void('pregunta2');">Avianca</a></button>
+                        <button class="btn btn-lg"><a class="pregunta2" href="javascript:void('pregunta2');">KLM</a></button>
+                        <button class="btn btn-lg"><a class="pregunta2" href="javascript:void('pregunta2');">Qantas</a></button>
+                    </div>
+                    <div class="redes">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda pregunta-->
+            <div class="col-xs-12 col-md-12 Preguntas" id="Cuestionario2">
+                <img src="img/buque.png">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                        <span class="sr-only">25% Complete</span>
+                    </div>
+                </div>
+                <div class="cajaPregunta" id="cajadePreguntas">
+                    <h3>Which is the largest port in the world?</h3>
+                    <div id="botonesRespuestas" class="btnRespuestas">
+                        <button class="btn btn-lg"><a class="pregunta3" href="javascript:void('pregunta3');">Port of Shanghai</a></button>
+                        <button class="btn btn-lg"><a class="pregunta3" href="javascript:void('pregunta3');">Port of Singapore</a></button>
+                        <button class="btn btn-lg"><a class="pregunta3" href="javascript:void('pregunta3');">Port of Rotterdam</a></button>
+                    </div>
+                    <div class="redes">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera pregunta-->
+            <div class="col-xs-12 col-md-12 Preguntas" id="Cuestionario3">
+                <img src="img/bicicleta.png">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        <span class="sr-only">25% Complete</span>
+                    </div>
+                </div>
+                <div class="cajaPregunta" id="cajadePreguntas">
+                    <h3>Which is the longest distance cycling backwards?</h3>
+                    <div id="botonesRespuestas" class="btnRespuestas">
+                        <button class="btn btn-lg"><a class="pregunta4" href="javascript:void('pregunta4');">89.30 km</a></button>
+                        <button class="btn btn-lg"><a class="pregunta4" href="javascript:void('pregunta4');">675.10 km</a></button>
+                        <button class="btn btn-lg"><a class="pregunta4" href="javascript:void('pregunta4');">337.60 km</a></button>
+                    </div>
+                    <div class="redes">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- cuarta pregunta-->
+            <div class="col-xs-12 col-md-12 Preguntas" id="Cuestionario4">
+                <img src="img/bus.png">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                        <span class="sr-only">25% Complete</span>
+                    </div>
+                </div>
+                <div class="cajaPregunta" id="cajadePreguntas">
+                    <h3>Which is the highest speed ever reached by a school bus?</h3>
+                    <div id="botonesRespuestas" class="btnRespuestas">
+                        <button class="btn btn-lg"><a class="pregunta5" href="javascript:void('pregunta5');">590 km/h</a></button>
+                        <button class="btn btn-lg"><a class="pregunta5" href="javascript:void('pregunta5');">320 km/h</a></button>
+                        <button class="btn btn-lg"><a class="pregunta5" href="javascript:void('pregunta5');">245 km/h</a></button>
+                    </div>
+                    <div class="redes">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Quinta pregunta-->
+            <div class="col-xs-12 col-md-12 Preguntas" id="Cuestionario5">
+                <img src="img/auto.png">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        <span class="sr-only">25% Complete</span>
+                    </div>
+                </div>
+                <div class="cajaPregunta" id="cajadePreguntas">
+                    <h3>Which is the longest car trip on one tank of gas?</h3>
+                    <div id="botonesRespuestas" class="btnRespuestas">
+                        <button class="btn btn-lg"><a class="hojasRespuestas" href="javascript:void('hojasRespuestas');">2617 km</a></button>
+                        <button class="btn btn-lg"><a class="hojasRespuestas" href="javascript:void('hojasRespuestas');">3568 km</a></button>
+                        <button class="btn btn-lg"><a class="hojasRespuestas" href="javascript:void('hojasRespuestas');">1732 km</a></button>
+                    </div>
+                    <div class="redes">
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Hoja de respuestas -->
+            <div class="col-xs-12 col-md-12 Preguntas" id="hojasRespuestas">
+                    <img src="img/camion.jpg">
+                    <div class="cajaRespuestas" id="cajadeRespuestas">
+                        <h3>Here are you answer:</h3>
+                        <div id="botonesRespuestas" class="btnRespuestas">
+                             <p><strong>1: </strong> Which is the oldest airline in the world?</p>
+                             <p><strong>2: </strong> Which is the largest port in the world?</p>
+                             <p><strong>3: </strong> Which is the longest distance cycling backwards?</p>
+                             <p><strong>4: </strong> Which is the highest speed ever reached by a school bus?</p>
+                             <p><strong>4: </strong> Which is the longest car trip on one tank of gas?</p>
+                        </div>
+                        <div class="btnSubmit">
+                           <button class="btn btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
