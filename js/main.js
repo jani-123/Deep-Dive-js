@@ -1,5 +1,5 @@
-$(document).ready(function () {
     $(document).ready(function () {
+        //var rptaDelJugador = document.getElementById("rpta");
         //ocultar cuestionarios
         $("#Cuestionario2").hide(); // oculta
         $("#Cuestionario3").hide();
@@ -11,12 +11,16 @@ $(document).ready(function () {
             $("#Cuestionario1").slideUp(0);// oculta con movimiento deslizante para arriba
             $("#hojasRespuestas").slideUp(0);
             $("#Cuestionario2").fadeIn(300);//fundir un elemento oculto muestra
+            var rpta1 = e.target.textContent;
+            console.log(rpta1);
         });
         $(".pregunta3").click(function (e) { // click en registrame
             $("#Cuestionario1").slideUp(0);// oculta con movimiento deslizante para arriba
             $("#Cuestionario2").slideUp(0);
             $("#hojasRespuestas").slideUp(0);
             $("#Cuestionario3").fadeIn(300);//fundir un elemento oculto muestra
+            var rpta2 = e.target.textContent;
+            console.log(rpta2);
         });
         $(".pregunta4").click(function (e) { // click en registrame
             $("#Cuestionario1").slideUp(0);// oculta con movimiento deslizante para arriba
@@ -24,6 +28,8 @@ $(document).ready(function () {
             $("#Cuestionario3").slideUp(0);
             $("#hojasRespuestas").slideUp(0);
             $("#Cuestionario4").fadeIn(300);//fundir un elemento oculto muestra
+            var rpta3 = e.target.textContent;
+            console.log(rpta3);
         });
         $(".pregunta5").click(function (e) { // click en registrame
             $("#Cuestionario1").slideUp(0);// oculta con movimiento deslizante para arriba
@@ -32,6 +38,8 @@ $(document).ready(function () {
             $("#Cuestionario4").slideUp(0);
             $("#hojasRespuestas").slideUp(0);
             $("#Cuestionario5").fadeIn(300);//fundir un elemento oculto muestra
+            var rpta4 = e.target.textContent;
+            console.log(rpta4);
         });
         $(".hojasRespuestas").click(function (e) { // click en registrame
             $("#Cuestionario1").slideUp(0);// oculta con movimiento deslizante para arriba
@@ -40,6 +48,8 @@ $(document).ready(function () {
             $("#Cuestionario4").slideUp(0);
             $("#Cuestionario5").slideUp(0);
             $("#hojasRespuestas").fadeIn(300);//fundir un elemento oculto muestra
+            var rpta5 = e.target.textContent;
+            console.log(rpta5);
         });
         $(".reiniciaJuego").click(function (e) { // click en registrame
             $("#Cuestionario2").slideUp(0);// oculta con movimiento deslizante para arriba
@@ -70,4 +80,3 @@ $(document).ready(function () {
             }
         })
     });
-});
